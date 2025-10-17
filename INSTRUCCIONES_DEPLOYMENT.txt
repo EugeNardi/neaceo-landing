@@ -1,0 +1,145 @@
+═══════════════════════════════════════════════════════════════════════════
+  INSTRUCCIONES PARA SUBIR A NETLIFY - NeaCeo Technologies
+═══════════════════════════════════════════════════════════════════════════
+
+📋 RESUMEN DE CAMBIOS REALIZADOS:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+✅ Números de teléfono agregados:
+   - Eugenio: +54 9 3467 41 2501
+   - Franco: +54 9 351 56 37053
+   - Contacto: +54 9 3472 58 70 90
+
+✅ Footer limpiado (solo enlaces funcionales)
+
+✅ Botón "Comenzar" removido del header
+
+✅ Formulario configurado con Netlify Forms
+   - Email destino: neaceotechnologies@gmail.com
+   - Fallback a mailto si falla
+
+✅ Proyecto preparado para deployment
+
+
+🚀 PASOS PARA SUBIR A NETLIFY:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+OPCIÓN 1: DESDE GITHUB (RECOMENDADO)
+────────────────────────────────────────────────────────────────────────
+
+1. Crear repositorio en GitHub:
+   
+   a) Ve a https://github.com y crea un nuevo repositorio
+   b) Nómbralo: neaceo-technologies
+   c) NO inicialices con README
+
+2. Subir el código:
+   
+   Abre la terminal en esta carpeta y ejecuta:
+   
+   git init
+   git add .
+   git commit -m "Initial commit - NeaCeo Technologies"
+   git branch -M main
+   git remote add origin https://github.com/TU_USUARIO/neaceo-technologies.git
+   git push -u origin main
+
+3. Conectar con Netlify:
+   
+   a) Ve a https://app.netlify.com
+   b) Click en "Add new site" → "Import an existing project"
+   c) Selecciona "GitHub" y autoriza
+   d) Busca y selecciona "neaceo-technologies"
+   e) Configuración:
+      - Build command: npm run build
+      - Publish directory: out
+   f) Click en "Deploy site"
+
+4. Configurar nombre del sitio:
+   
+   a) Una vez desplegado, ve a "Site settings"
+   b) Click en "Change site name"
+   c) Ingresa: neaceo
+   d) Tu sitio estará en: https://neaceo.netlify.app
+
+
+OPCIÓN 2: DRAG & DROP (MÁS RÁPIDO)
+────────────────────────────────────────────────────────────────────────
+
+1. Construir el proyecto:
+   
+   Abre la terminal en esta carpeta y ejecuta:
+   
+   npm run build
+
+2. Subir a Netlify:
+   
+   a) Ve a https://app.netlify.com
+   b) Arrastra la carpeta "out" a la zona de deploy
+   c) Espera a que termine el deploy
+   d) Ve a "Site settings" → "Change site name"
+   e) Ingresa: neaceo
+
+
+📧 CONFIGURAR NOTIFICACIONES DE EMAIL:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+IMPORTANTE: Después del deploy, configura las notificaciones:
+
+1. En Netlify, ve a tu sitio
+2. Click en "Site settings" → "Forms"
+3. Deberías ver el formulario "contact"
+4. Click en "Form notifications"
+5. Click en "Add notification" → "Email notification"
+6. Configuración:
+   - Email to notify: neaceotechnologies@gmail.com
+   - Form: contact
+7. Click en "Save"
+
+¡Ahora recibirás emails cuando alguien complete el formulario!
+
+
+✅ VERIFICACIÓN POST-DEPLOY:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Después del deploy, verifica:
+
+□ El sitio carga en https://neaceo.netlify.app
+□ El formulario de contacto funciona
+□ Los números de teléfono son clickeables
+□ El email en el footer funciona
+□ Las animaciones se ven bien
+□ El sitio es responsive en móvil
+
+
+🔄 ACTUALIZAR EL SITIO EN EL FUTURO:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Si usaste GitHub:
+   
+   git add .
+   git commit -m "Descripción de cambios"
+   git push
+
+   Netlify detectará los cambios y redesplegará automáticamente.
+
+Si usaste Drag & Drop:
+   
+   npm run build
+   
+   Luego arrastra la carpeta "out" a Netlify nuevamente.
+
+
+📞 CONTACTO:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Email: neaceotechnologies@gmail.com
+
+Eugenio: +54 9 3467 41 2501
+Franco: +54 9 351 56 37053
+Contacto: +54 9 3472 58 70 90
+
+
+═══════════════════════════════════════════════════════════════════════════
+  ¡Todo listo para producción! 🚀
+═══════════════════════════════════════════════════════════════════════════
