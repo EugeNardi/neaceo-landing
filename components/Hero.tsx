@@ -79,7 +79,7 @@ export default function Hero() {
           >
             Construimos el futuro
             <br />
-            una startup a la vez
+            Hacemos realidad los proyectos
           </motion.h1>
 
           {/* Description */}
